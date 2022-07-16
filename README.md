@@ -1,6 +1,6 @@
 # Softnerve Student Information System
 
-Live Link on netlify: https://softnerve-student-information-system.netlify.app
+Live Link on netlify: https://softnerve-student-information-system.netlify.app <br>
 Backend Github link: https://github.com/alamgirjuab/student-crud-api-backend
 
 ### Using Technology
