@@ -26,7 +26,7 @@ function App() {
 
   // Handle Datele Function
   const handleDelete = id => {
-    const url = `https://immense-plateau-15676.herokuapp.com/${id}`;
+    const url = `https://immense-plateau-15676.herokuapp.com/studentinfo/${id}`;
     fetch(url, {
       method: 'DELETE'
     })
@@ -94,7 +94,7 @@ function App() {
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
-                {/* <Modal.Title>Modal heading</Modal.Title> */}
+                <Modal.Title>Insert New Record</Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <PopupForm handleClose={handleClose} getStudentData={getStudentData} />
