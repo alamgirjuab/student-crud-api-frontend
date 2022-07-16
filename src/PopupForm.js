@@ -10,7 +10,7 @@ const PopupForm = (props) => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/studentinfo', data)
+        axios.post('https://immense-plateau-15676.herokuapp.com/studentinfo', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Data inserted successfully');

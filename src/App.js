@@ -17,7 +17,7 @@ function App() {
   // Get Data From Database
   const getStudentData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/studentinfo')
+      const response = await axios.get('https://immense-plateau-15676.herokuapp.com/studentinfo')
       setStudentData(response.data);
     } catch (error) {
       console.log(error);
@@ -26,7 +26,7 @@ function App() {
 
   // Handle Datele Function
   const handleDelete = id => {
-    const url = `http://localhost:5000/studentinfo/${id}`;
+    const url = `https://immense-plateau-15676.herokuapp.com/${id}`;
     fetch(url, {
       method: 'DELETE'
     })
